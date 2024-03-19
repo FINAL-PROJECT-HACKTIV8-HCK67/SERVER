@@ -7,9 +7,9 @@ router.get('/course', Controller.getCourse)
 
 router.post('/course', Controller.postCourse) // Nanti dihapus
 
-router.post('/course/unlock-first-course', Controller.firstCourse)
-
 router.get('/course/my-course', authentication, Controller.myCourse)
+
+router.get('/course/my-course/:detail', authentication, Controller.myCourseDetail)
 
 router.post('/course/unlock-course', authentication, Controller.unlockCourse)
 

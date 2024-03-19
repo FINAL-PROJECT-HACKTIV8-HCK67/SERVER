@@ -5,7 +5,7 @@ class Controller {
 
     static async getCourse(req, res, next){
         try {
-            const courseData = await database.collection("Courses").find()
+            const courseData = await database.collection("Courses").find().toArray()
 
             res.status(200).json({courseData})
 
@@ -31,14 +31,36 @@ class Controller {
         }
     }
 
-    static async postCourse(req, res, next){
+    static async myCourseDetail(req, res, next){
         try {
+            const user = req.user
 
-            const {name, sections} = req.body
-            
-            const course = await database.collection("Courses").insertOne({name, sections})
+            const {detail} = req.params
 
-            res.status(201).json({course})
+            const response = await database.collection("UserCourses").aggregate([
+                {
+                    $match:
+                        {
+                        userId: user.id,
+                        },
+                },
+                {
+                    $match:
+                        {
+                        name: detail,
+                        },
+                },
+                {
+                    $unwind:
+                        {
+                        path: "$sections",
+                        },
+                },
+            ]).toArray()
+
+            console.log(response, ">>>>>>>>");
+
+            res.status(200).json({response})
 
         } catch (error) {
             console.log(error);
@@ -46,29 +68,14 @@ class Controller {
         }
     }
 
-    static async firstCourse(req, res, next){
+    static async postCourse(req, res, next){
         try {
-            const {course1, course2} = req.body
 
-            if(!course1 || !course2) throw {name : "Data not found"}
+            const {name, sections, cost} = req.body
+            
+            const course = await database.collection("Courses").insertOne({name, sections, cost})
 
-            delete course1._id
-            delete course2._id
-
-            const response = await database.collection("UserCourses").insertMany(
-                [
-                    {
-                        userId : req.user.id,
-                        ...course1
-                    },
-                    {
-                        userId : req.user.id,
-                        ...course2
-                    }
-                ]
-            )
-
-            res.status(201).json({response})
+            res.status(201).json({course})
 
         } catch (error) {
             console.log(error);
@@ -88,12 +95,27 @@ class Controller {
 
             delete course._id
 
+            const userStat = await database.collection("UserStats").findOne({userId : new ObjectId(user.id)})
+
+            if(userStat.stats.coin < course.cost){
+                throw {name : "Insufficient Coin", message : "Insufficient Coin", status : 400}
+            }
+
+            const hasBought = await database.collection("UserCourses").findOne({userId : user.id, name : course.name})
+
+            if(hasBought) throw {name : "Course has been bought before", message : "Course has been bought before", status : 400}
+
             const response = await database.collection("UserCourses").insertOne({
                 userId : user.id,
                 ...course
             })
 
-            res.status(201).json({message : "Course unlocked"})
+            const response2 = await database.collection("UserStats").updateOne(
+                {userId : new ObjectId(user.id)},
+                {$set : {"stats.coin" : userStat.stats.coin - course.cost}}
+            )
+
+            res.status(201).json({message : `Course unlocked, ${userStat.stats.coin - course.cost} coins remained`})
 
         } catch (error) {
             console.log(error);
@@ -105,12 +127,23 @@ class Controller {
         try {
             const user = req.user
 
-            const {courseId, title, type} = req.body
+            const {courseTitle, title, index} = req.body
+
+            // const response = await database.collection("UserCourses").updateOne(
+            //     {_id : new ObjectId(courseId), userId : user.id , "sections.title" : title, "sections.content.type" : type},
+            //     {$set : {"sections.$.content.$[elem].isComplete" : true}},
+            //     {"arrayFilters" : [{"elem.type" : type}]}
+            // )
+
+            const updateQuery = {
+                $set: {}
+            }
+
+            updateQuery.$set[`sections.0.content.${index}.isComplete`] = true
 
             const response = await database.collection("UserCourses").updateOne(
-                {_id : new ObjectId(courseId), userId : user.id , "sections.title" : title, "sections.content.type" : type},
-                {$set : {"sections.$.content.$[elem].isComplete" : true}},
-                {"arrayFilters" : [{"elem.type" : type}]}
+                {name : courseTitle, userId : user.id},
+                updateQuery
             )
 
             res.status(200).json({message : "Course Completed"})

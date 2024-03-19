@@ -2,6 +2,7 @@ const { ObjectId } = require("mongodb");
 const database = require("../config/db");
 const { comparePassword, hashPassword } = require("../helpers/bcrypt");
 const { signToken } = require("../helpers/jwt");
+const achievementManager = require("../helpers/achievementManager");
 
 class Controller {
 
@@ -25,7 +26,9 @@ class Controller {
                 email : user.email
             })
 
-            res.status(200).json({accessToken})
+            const achievement = await achievementManager(user._id)
+
+            res.status(200).json({accessToken, achievement})
 
         } catch (error) {
             console.log(error);
@@ -68,7 +71,7 @@ class Controller {
                 userId : newUser.insertedId,
                 stats : {
                     exp : 0, 
-                    coin : 0,
+                    coin : 2000,
                     courseUnlocked : 0,
                     quizAnswered : 0,
                 }
@@ -111,6 +114,39 @@ class Controller {
 
             res.status(200).json({user, userStat, userAchievement})
 
+        } catch (error) {
+            console.log(error);
+            next(error)
+        }
+    }
+
+    static async leaderBoard(req, res, next){
+        try {
+            const user = await database.collection("Users").aggregate([
+                {
+                  $lookup:
+                    {
+                      from: "UserStats",
+                      localField: "_id",
+                      foreignField: "userId",
+                      as: "Stats",
+                    },
+                },
+                {
+                  $unwind:
+                    {
+                      path: "$Stats",
+                    },
+                },
+                {
+                  $sort:
+                    {
+                      "Stats.stats.exp": -1,
+                    },
+                },
+              ]).toArray()
+
+            res.status(200).json({user})
         } catch (error) {
             console.log(error);
             next(error)

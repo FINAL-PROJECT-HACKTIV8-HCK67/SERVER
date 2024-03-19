@@ -11,4 +11,6 @@ router.post('/register', Controller.register)
 
 router.get('/profile', authentication, Controller.userProfile)
 
+router.get('/leaderboard', authentication, Controller.leaderBoard)
+
 module.exports = router

@@ -7,7 +7,7 @@ module.exports = async function authentication(req, res, next){
         }
 
         let [bearer, token] = req.headers.authorization.split(" ")
-        console.log(bearer, token);
+        console.log(bearer, token, "DARI AUTHENTICATION");
         if(!token || bearer !== "Bearer"){
             throw ({name:"Invalid token"})
         }
