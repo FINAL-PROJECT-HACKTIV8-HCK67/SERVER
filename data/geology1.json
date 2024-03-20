@@ -1,0 +1,648 @@
+{
+    "name": "COURSE_NAME",
+    "cost": 1000,
+    "sections": [
+        {
+            "title": "SECTION_TITLE",
+            "content": [
+                {
+                    "type": "reading",
+                    "content": "TEXT_CONTENT",
+                    "isComplete": false
+                },
+                {
+                    "type": "video",
+                    "content": "YOUTUBE_LINK",
+                    "isComplete": false
+                },
+                {
+                    "type": "video",
+                    "content": "YOUTUBE_LINK",
+                    "isComplete": false
+                }
+            ],
+            "quiz": [
+                {
+                    "number": 1,
+                    "questions": "Apa yang dimaksud dengan geologi dasar?",
+                    "options": [
+                        {
+                            "A": "Studi tentang formasi asteroid dan meteorit"
+                        },
+                        {
+                            "B": "Cabang ilmu geologi yang mempelajari struktur dan sejarah bumi"
+                        },
+                        {
+                            "C": "Studi tentang atmosfer dan cuaca bumi"
+                        },
+                        {
+                            "D": "Cabang ilmu geologi yang mempelajari sumber daya mineral"
+                        }
+                    ]
+                },
+                {
+                    "number": 2,
+                    "questions": "Proses terbentuknya lapisan bumi dapat dijelaskan melalui…",
+                    "options": [
+                        {
+                            "A": "Teori Big Bang"
+                        },
+                        {
+                            "B": "Teori Evolusi"
+                        },
+                        {
+                            "C": "Teori Tektonik Lempeng"
+                        },
+                        {
+                            "D": "Teori Relativitas Umum"
+                        }
+                    ]
+                },
+                {
+                    "number": 3,
+                    "questions": "Apa yang menjadi konsep utama dalam siklus batuan?",
+                    "options": [
+                        {
+                            "A": "Gerakan rotasi bumi"
+                        },
+                        {
+                            "B": "Perubahan wujud batuan dari satu bentuk ke bentuk lainnya"
+                        },
+                        {
+                            "C": "Proses pembentukan gunung api"
+                        },
+                        {
+                            "D": "Pergerakan lempeng tektonik"
+                        }
+                    ]
+                },
+                {
+                    "number": 4,
+                    "questions": "Bagaimana batuan dapat berubah bentuk dalam siklus batuan?",
+                    "options": [
+                        {
+                            "A": "Melalui proses pelapukan, pengangkutan, sedimentasi, litifikasi, dan metamorfisme"
+                        },
+                        {
+                            "B": "Melalui proses fotosintesis oleh tumbuhan"
+                        },
+                        {
+                            "C": "Melalui proses pembentukan kristal"
+                        },
+                        {
+                            "D": "Melalui proses pembentukan kubah lava"
+                        }
+                    ]
+                },
+                {
+                    "number": 5,
+                    "questions": "Apa yang menjadi dampak dari aktivitas geologi seperti gempa bumi dan letusan gunung api?",
+                    "options": [
+                        {
+                            "A": "Peningkatan suhu global"
+                        },
+                        {
+                            "B": "Perubahan pola angin"
+                        },
+                        {
+                            "C": "Dampak negatif terhadap lingkungan dan kehidupan"
+                        },
+                        {
+                            "D": "Pembentukan hujan asam"
+                        }
+                    ]
+                },
+                {
+                    "number": 6,
+                    "questions": "Lapisan bumi yang merupakan kerak yang tipis dan padat yang membentuk daratan disebut…",
+                    "options": [
+                        {
+                            "A": "Mantel"
+                        },
+                        {
+                            "B": "Inti bumi"
+                        },
+                        {
+                            "C": "Kerak benua"
+                        },
+                        {
+                            "D": "Kerak samudera"
+                        }
+                    ]
+                },
+                {
+                    "number": 7,
+                    "questions": "Proses apa yang menjelaskan perubahan posisi lempeng-lempeng bumi di atas astenosfer?",
+                    "options": [
+                        {
+                            "A": "Pelapukan"
+                        },
+                        {
+                            "B": "Erosi"
+                        },
+                        {
+                            "C": "Tektonik lempeng"
+                        },
+                        {
+                            "D": "Pelurusan"
+                        }
+                    ]
+                },
+                {
+                    "number": 8,
+                    "questions": "Berapa lapisan utama yang ada di dalam bumi?",
+                    "options": [
+                        {
+                            "A": "2"
+                        },
+                        {
+                            "B": "3"
+                        },
+                        {
+                            "C": "4"
+                        },
+                        {
+                            "D": "5"
+                        }
+                    ]
+                },
+                {
+                    "number": 9,
+                    "questions": "Apa yang dimaksud dengan litifikasi dalam siklus batuan?",
+                    "options": [
+                        {
+                            "A": "Proses pengendapan sedimen menjadi batuan"
+                        },
+                        {
+                            "B": "Proses pelelehan batuan oleh tekanan dan panas"
+                        },
+                        {
+                            "C": "Proses pembentukan batuan sedimen"
+                        },
+                        {
+                            "D": "Proses perubahan batuan oleh tekanan"
+                        }
+                    ]
+                },
+                {
+                    "number": 10,
+                    "questions": "Mengapa pemahaman tentang geologi dasar penting bagi manusia?",
+                    "options": [
+                        {
+                            "A": "Untuk memahami fenomena alam seperti gempa bumi dan letusan gunung api"
+                        },
+                        {
+                            "B": "Untuk mengetahui cara mengebor minyak bumi"
+                        },
+                        {
+                            "C": "Untuk menemukan tambang emas tersembunyi"
+                        },
+                        {
+                            "D": "Untuk mengurangi polusi udara"
+                        }
+                    ]
+                }
+            ],
+            "quizAnswer": {
+                "1": "B. Cabang ilmu geologi yang mempelajari struktur dan sejarah bumi",
+                "2": "C. Teori Tektonik Lempeng",
+                "3": "B. Perubahan wujud batuan dari satu bentuk ke bentuk lainnya",
+                "4": "A. Melalui proses pelapukan, pengangkutan, sedimentasi, litifikasi, dan metamorfisme",
+                "5": "C. Dampak negatif terhadap lingkungan dan kehidupan",
+                "6": "C. Kerak benua",
+                "7": "C. Tektonik lempeng",
+                "8": "B. 3",
+                "9": "A. Proses pengendapan sedimen menjadi batuan",
+                "10": "A. Untuk memahami fenomena alam seperti gempa bumi dan letusan gunung api"
+            }
+        },
+        {
+            "title": "SECTION_TITLE",
+            "content": [
+                {
+                    "type": "reading",
+                    "content": "TEXT_CONTENT",
+                    "isComplete": false
+                },
+                {
+                    "type": "video",
+                    "content": "YOUTUBE_LINK",
+                    "isComplete": false
+                },
+                {
+                    "type": "video",
+                    "content": "YOUTUBE_LINK",
+                    "isComplete": false
+                }
+            ],
+            "quiz": [
+                {
+                    "number": 1,
+                    "questions": "Apa yang dimaksud dengan siklus batuan?",
+                    "options": [
+                        {
+                            "A": "Proses terbentuknya batuan baru di dalam bumi"
+                        },
+                        {
+                            "B": "Perubahan wujud batuan dari satu bentuk ke bentuk lainnya"
+                        },
+                        {
+                            "C": "Proses penghancuran batuan oleh gesekan"
+                        },
+                        {
+                            "D": "Pergerakan lempeng tektonik di bawah laut"
+                        }
+                    ]
+                },
+                {
+                    "number": 2,
+                    "questions": "Proses awal dalam siklus batuan yang melibatkan pemecahan batuan menjadi fragmen yang lebih kecil disebut…",
+                    "options": [
+                        {
+                            "A": "Pengangkutan"
+                        },
+                        {
+                            "B": "Sedimentasi"
+                        },
+                        {
+                            "C": "Pelapukan"
+                        },
+                        {
+                            "D": "Metamorfisme"
+                        }
+                    ]
+                },
+                {
+                    "number": 3,
+                    "questions": "Apa yang menjadi hasil dari pelapukan kimia?",
+                    "options": [
+                        {
+                            "A": "Perpindahan fragmen batuan dari satu tempat ke tempat lain"
+                        },
+                        {
+                            "B": "Pemecahan batuan menjadi fragmen tanpa perubahan komposisi kimia"
+                        },
+                        {
+                            "C": "Perubahan mineral dalam batuan akibat reaksi kimia"
+                        },
+                        {
+                            "D": "Pembentukan batuan sedimen baru"
+                        }
+                    ]
+                },
+                {
+                    "number": 4,
+                    "questions": "Proses apa yang melibatkan perpindahan fragmen batuan dari tempat asalnya ke lokasi baru?",
+                    "options": [
+                        {
+                            "A": "Pelapukan"
+                        },
+                        {
+                            "B": "Pengangkutan"
+                        },
+                        {
+                            "C": "Sedimentasi"
+                        },
+                        {
+                            "D": "Metamorfisme"
+                        }
+                    ]
+                },
+                {
+                    "number": 5,
+                    "questions": "Fragmen batuan yang mengendap dan menumpuk di suatu tempat mengalami proses apa?",
+                    "options": [
+                        {
+                            "A": "Pelapukan"
+                        },
+                        {
+                            "B": "Pengangkutan"
+                        },
+                        {
+                            "C": "Sedimentasi"
+                        },
+                        {
+                            "D": "Litifikasi"
+                        }
+                    ]
+                },
+                {
+                    "number": 6,
+                    "questions": "Apa yang terbentuk dari pengendapan bahan seperti pasir, lumpur, kerikil, atau sisa organisme?",
+                    "options": [
+                        {
+                            "A": "Batuan magmatik"
+                        },
+                        {
+                            "B": "Batuan metamorf"
+                        },
+                        {
+                            "C": "Batuan sedimen"
+                        },
+                        {
+                            "D": "Batuan beku"
+                        }
+                    ]
+                },
+                {
+                    "number": 7,
+                    "questions": "Proses apa yang membentuk lapisan-lapisan batuan sedimen baru?",
+                    "options": [
+                        {
+                            "A": "Pelapukan"
+                        },
+                        {
+                            "B": "Pengangkutan"
+                        },
+                        {
+                            "C": "Sedimentasi"
+                        },
+                        {
+                            "D": "Metamorfisme"
+                        }
+                    ]
+                },
+                {
+                    "number": 8,
+                    "questions": "Apa yang terjadi selama proses pengangkutan fragmen batuan?",
+                    "options": [
+                        {
+                            "A": "Pemecahan batuan menjadi fragmen yang lebih kecil"
+                        },
+                        {
+                            "B": "Pengendapan fragmen batuan di suatu tempat"
+                        },
+                        {
+                            "C": "Perpindahan fragmen batuan dari satu tempat ke tempat lain"
+                        },
+                        {
+                            "D": "Perubahan mineral dalam batuan"
+                        }
+                    ]
+                },
+                {
+                    "number": 9,
+                    "questions": "Bagaimana siklus batuan membantu kita memahami sejarah geologis bumi?",
+                    "options": [
+                        {
+                            "A": "Dengan mengendapkan batuan baru"
+                        },
+                        {
+                            "B": "Dengan menghancurkan batuan yang ada"
+                        },
+                        {
+                            "C": "Dengan membentuk lapisan-lapisan batuan yang berbeda"
+                        },
+                        {
+                            "D": "Dengan mengubah komposisi mineral dalam batuan"
+                        }
+                    ]
+                },
+                {
+                    "number": 10,
+                    "questions": "Apa yang dimaksud dengan litifikasi dalam siklus batuan?",
+                    "options": [
+                        {
+                            "A": "Proses penghancuran batuan oleh gesekan"
+                        },
+                        {
+                            "B": "Proses pembentukan batuan sedimen dari fragmen yang diangkut"
+                        },
+                        {
+                            "C": "Proses pemecahan batuan menjadi fragmen yang lebih kecil"
+                        },
+                        {
+                            "D": "Proses perubahan mineral dalam batuan"
+                        }
+                    ]
+                }
+            ],
+            "quizAnswer": {
+                "1": "B. Perubahan wujud batuan dari satu bentuk ke bentuk lainnya",
+                "2": "C. Pelapukan",
+                "3": "C. Perubahan mineral dalam batuan akibat reaksi kimia",
+                "4": "B. Pengangkutan",
+                "5": "C. Sedimentasi",
+                "6": "C. Batuan sedimen",
+                "7": "C. Sedimentasi",
+                "8": "C. Perpindahan fragmen batuan dari satu tempat ke tempat lain",
+                "9": "C. Dengan membentuk lapisan-lapisan batuan yang berbeda",
+                "10": "B. Proses pembentukan batuan sedimen dari fragmen yang diangkut"
+            }
+        },
+        {
+            "title": "SECTION_TITLE",
+            "content": [
+                {
+                    "type": "reading",
+                    "content": "TEXT_CONTENT",
+                    "isComplete": false
+                },
+                {
+                    "type": "video",
+                    "content": "YOUTUBE_LINK",
+                    "isComplete": false
+                },
+                {
+                    "type": "video",
+                    "content": "YOUTUBE_LINK",
+                    "isComplete": false
+                }
+            ],
+            "quiz": [
+                {
+                    "number": 1,
+                    "questions": "Apa yang dimaksud dengan siklus hidrologi?",
+                    "options": [
+                        {
+                            "A": "Pergerakan benua di permukaan bumi"
+                        },
+                        {
+                            "B": "Proses pembentukan awan di langit"
+                        },
+                        {
+                            "C": "Pergerakan air di berbagai fase di bumi, mulai dari penguapan hingga presipitasi"
+                        },
+                        {
+                            "D": "Proses pertukaran gas antara tanaman dan atmosfer"
+                        }
+                    ]
+                },
+                {
+                    "number": 2,
+                    "questions": "Proses awal dalam siklus hidrologi yang melibatkan perubahan air menjadi uap air disebut…",
+                    "options": [
+                        {
+                            "A": "Kondensasi"
+                        },
+                        {
+                            "B": "Transpirasi"
+                        },
+                        {
+                            "C": "Penguapan"
+                        },
+                        {
+                            "D": "Presipitasi"
+                        }
+                    ]
+                },
+                {
+                    "number": 3,
+                    "questions": "Apa yang terjadi selama proses kondensasi dalam siklus hidrologi?",
+                    "options": [
+                        {
+                            "A": "Air mengalami perubahan menjadi vao air"
+                        },
+                        {
+                            "B": "Uap air naik ke atmosfer"
+                        },
+                        {
+                            "C": "Uap air berubah menjadi air cair dan membentuk awan"
+                        },
+                        {
+                            "D": "Air jatuh kembali ke permukaan bumi"
+                        }
+                    ]
+                },
+                {
+                    "number": 4,
+                    "questions": "Proses apa yang terjadi ketika awan menumbulkan presipitasi?",
+                    "options": [
+                        {
+                            "A": "Penguapan"
+                        },
+                        {
+                            "B": "Transpirasi"
+                        },
+                        {
+                            "C": "Kondensasi"
+                        },
+                        {
+                            "D": "Hujan atau salju terjadi"
+                        }
+                    ]
+                },
+                {
+                    "number": 5,
+                    "questions": "Apa yang terjadi dengan air yang jatuh ke permukaan bumi selama presipitasi?",
+                    "options": [
+                        {
+                            "A": "Menguap kembali ke atmosfer"
+                        },
+                        {
+                            "B": "Mengalir ke sungai dan danau"
+                        },
+                        {
+                            "C": "Menyusup ke dalam tanah"
+                        },
+                        {
+                            "D": "Semua jawaban benar"
+                        }
+                    ]
+                },
+                {
+                    "number": 6,
+                    "questions": "Apa yang dimaksud dengan limpasan permukaan dalam siklus hidrologi?",
+                    "options": [
+                        {
+                            "A": "Air yang meresap ke dalam tanah"
+                        },
+                        {
+                            "B": "Air yang mengalir di permukaan tanah ke sungai dan danau"
+                        },
+                        {
+                            "C": "Proses terbentuknya awan di langit"
+                        },
+                        {
+                            "D": "Air yang menguap dari permukaan tanah"
+                        }
+                    ]
+                },
+                {
+                    "number": 7,
+                    "questions": "Bagaimana air yang diserap oleh tanah dalam siklus hidrologi?",
+                    "options": [
+                        {
+                            "A": "Mengalir ke sungai dan danau"
+                        },
+                        {
+                            "B": "Membentuk awan di langit"
+                        },
+                        {
+                            "C": "Membentuk mata air atau diserap oleh akar tanaman"
+                        },
+                        {
+                            "D": "Menguap kembali ke atmosfer"
+                        }
+                    ]
+                },
+                {
+                    "number": 8,
+                    "questions": "Apa yang terjadi dengan air tanah dalam siklus hidrologi?",
+                    "options": [
+                        {
+                            "A": "Mengalir ke sungai dan danau"
+                        },
+                        {
+                            "B": "Mengalir kembali ke laut"
+                        },
+                        {
+                            "C": "Membentuk mata air atau diserap oleh akar tanaman"
+                        },
+                        {
+                            "D": "Menguap kembali ke atmosfer"
+                        }
+                    ]
+                },
+                {
+                    "number": 9,
+                    "questions": "Bagaimana siklus hidrologi berakhir?",
+                    "options": [
+                        {
+                            "A": "Dengan penguapan air dari permukaan bumi"
+                        },
+                        {
+                            "B": "Dengan pembentukan awan di langit"
+                        },
+                        {
+                            "C": "Dengan air yang mengalir ke sungai dan akhirnya ke laut"
+                        },
+                        {
+                            "D": "Dengan air yang diserap oleh tanah"
+                        }
+                    ]
+                },
+                {
+                    "number": 10,
+                    "questions": "Mengapa siklus hidrologi sangat penting bagi kehidupan di bumi?",
+                    "options": [
+                        {
+                            "A": "Karena mengatur pergerakan benua di permukaan bumi"
+                        },
+                        {
+                            "B": "Karena membentuk gurun dan padang rumput"
+                        },
+                        {
+                            "C": "Karena mengatur distribusi air di seluruh planet kita"
+                        },
+                        {
+                            "D": "Karena mengendalikan iklim dan cuaca"
+                        }
+                    ]
+                }
+            ],
+            "quizAnswer": {
+                "1": "C. Pergerakan air di berbagai fase di bumi, mulai dari penguapan hingga presipitasi",
+                "2": "C. Penguapan",
+                "3": "C. Uap air berubah menjadi air cair dan membentuk awan",
+                "4": "D. Hujan atau salju terjadi",
+                "5": "D. Semua jawaban benar",
+                "6": "B. Air yang mengalir di permukaan tanah ke sungai dan danau",
+                "7": "C. Membentuk mata air atau diserap oleh akar tanaman",
+                "8": "C. Membentuk mata air atau diserap oleh akar tanaman",
+                "9": "C. Dengan air yang mengalir ke sungai dan akhirnya ke laut",
+                "10": "C. Karena mengatur distribusi air di seluruh planet kita"
+            }
+        }
+    ]
+}
