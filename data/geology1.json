@@ -1,23 +1,23 @@
 {
-    "name": "COURSE_NAME",
+    "name": "Geologi I",
     "cost": 1000,
     "sections": [
         {
-            "title": "SECTION_TITLE",
+            "title": "Intro",
             "content": [
                 {
                     "type": "reading",
-                    "content": "TEXT_CONTENT",
+                    "content": "Geologi dasar adalah cabang ilmu geologi yang mempelajari tentang struktur, komposisi, dan sejarah bumi. Melalui geologi dasar, kita dapat memahami bagaimana bumi terbentuk, bagaimana batuan dan mineral terbentuk, serta proses-proses geologi yang terjadi di dalamnya. Beberapa konsep penting dalam geologi dasar meliputi pembentukan lapisan bumi, pergerakan lempeng tektonik, siklus batuan, dan pengaruh aktivitas geologi terhadap lingkungan.Salah satu topik utama dalam geologi dasar adalah pembentukan lapisan bumi. Bumi memiliki struktur yang terdiri dari lapisan-lapisan seperti kerak benua, kerak samudera, mantel, dan inti bumi. Proses terbentuknya lapisan ini dapat dijelaskan melalui teori tektonik lempeng, di mana kerak bumi terbagi menjadi beberapa lempeng yang bergerak secara lambat di atas astenosfer, lapisan mantel yang plastis.Selain itu, siklus batuan juga merupakan konsep penting dalam geologi dasar. Siklus ini menjelaskan bagaimana batuan bumi dapat berubah dari satu bentuk ke bentuk lainnya melalui proses-proses seperti pelapukan, pengangkutan, sedimentasi, litifikasi, dan metamorfisme. Melalui pemahaman siklus batuan, geolog dapat mempelajari sejarah perubahan yang terjadi pada bumi selama jutaan tahun.Pengaruh aktivitas geologi terhadap lingkungan juga menjadi perhatian dalam geologi dasar. Aktivitas seperti letusan gunung api, gempa bumi, dan perubahan iklim dapat memiliki dampak yang signifikan terhadap ekosistem dan kehidupan di bumi. Oleh karena itu, pemahaman tentang proses-proses geologi ini penting dalam upaya untuk memahami dan mengelola lingkungan kita.",
                     "isComplete": false
                 },
                 {
                     "type": "video",
-                    "content": "YOUTUBE_LINK",
+                    "content": "https://www.youtube.com/watch?v=4AxZ-6MOznY",
                     "isComplete": false
                 },
                 {
                     "type": "video",
-                    "content": "YOUTUBE_LINK",
+                    "content": "https://www.youtube.com/watch?v=hHteUIS0OFY",
                     "isComplete": false
                 }
             ],
@@ -204,34 +204,35 @@
                 }
             ],
             "quizAnswer": {
-                "1": "B. Cabang ilmu geologi yang mempelajari struktur dan sejarah bumi",
-                "2": "C. Teori Tektonik Lempeng",
-                "3": "B. Perubahan wujud batuan dari satu bentuk ke bentuk lainnya",
-                "4": "A. Melalui proses pelapukan, pengangkutan, sedimentasi, litifikasi, dan metamorfisme",
-                "5": "C. Dampak negatif terhadap lingkungan dan kehidupan",
-                "6": "C. Kerak benua",
-                "7": "C. Tektonik lempeng",
-                "8": "B. 3",
-                "9": "A. Proses pengendapan sedimen menjadi batuan",
-                "10": "A. Untuk memahami fenomena alam seperti gempa bumi dan letusan gunung api"
-            }
+                "1": "B",
+                "2": "C",
+                "3": "B",
+                "4": "A",
+                "5": "C",
+                "6": "C",
+                "7": "C",
+                "8": "B",
+                "9": "A",
+                "10": "A"
+            },
+            "userScore": 0
         },
         {
-            "title": "SECTION_TITLE",
+            "title": "Siklus Batuan",
             "content": [
                 {
                     "type": "reading",
-                    "content": "TEXT_CONTENT",
+                    "content": "Siklus batuan adalah proses alamiah di mana batuan bumi mengalami perubahan dari satu bentuk menjadi bentuk lainnya. Proses ini melibatkan serangkaian peristiwa geologi seperti pelapukan, pengangkutan, sedimentasi, litifikasi, dan metamorfisme. Siklus batuan memainkan peran penting dalam membentuk keragaman batuan yang ada di bumi dan membantu kita memahami sejarah geologis bumi.Pelapukan merupakan tahap awal dalam siklus batuan. Pelapukan adalah proses pemecahan batuan menjadi fragmen-fragmen yang lebih kecil akibat pengaruh cuaca, air, angin, dan organisme. Ada dua jenis pelapukan: pelapukan fisik dan pelapukan kimia. Pelapukan fisik terjadi ketika batuan pecah menjadi fragmen tanpa mengubah komposisi kimianya. Sementara pelapukan kimia melibatkan reaksi kimia yang mengubah komposisi mineral dalam batuan.Setelah mengalami pelapukan, fragmen-fragmen batuan akan diangkut oleh pengangkutan. Proses ini melibatkan perpindahan fragmen batuan dari tempat asalnya ke lokasi baru. Pengangkutan dapat terjadi melalui air sungai, angin, es, atau gravitasi. Selama proses pengangkutan, fragmen batuan ini akan mengalami gesekan dan abrasi yang dapat mempengaruhi bentuk dan ukurannya.Fragmen batuan yang diangkut kemudian akan mengalami sedimentasi. Ini terjadi ketika fragmen batuan tersebut mengendap dan menumpuk di suatu tempat akibat dari pengaruh gravitasi. Proses sedimentasi ini membentuk lapisan-lapisan batuan baru yang disebut batuan sedimen. Batuan sedimen ini dapat terbentuk dari pengendapan bahan-bahan seperti pasir, lumpur, kerikil, atau sisa organisme.",
                     "isComplete": false
                 },
                 {
                     "type": "video",
-                    "content": "YOUTUBE_LINK",
+                    "content": "https://www.youtube.com/watch?v=rmH4W92eHVM",
                     "isComplete": false
                 },
                 {
                     "type": "video",
-                    "content": "YOUTUBE_LINK",
+                    "content": "https://www.youtube.com/watch?v=3LObb5WxMdw",
                     "isComplete": false
                 }
             ],
@@ -418,34 +419,35 @@
                 }
             ],
             "quizAnswer": {
-                "1": "B. Perubahan wujud batuan dari satu bentuk ke bentuk lainnya",
-                "2": "C. Pelapukan",
-                "3": "C. Perubahan mineral dalam batuan akibat reaksi kimia",
-                "4": "B. Pengangkutan",
-                "5": "C. Sedimentasi",
-                "6": "C. Batuan sedimen",
-                "7": "C. Sedimentasi",
-                "8": "C. Perpindahan fragmen batuan dari satu tempat ke tempat lain",
-                "9": "C. Dengan membentuk lapisan-lapisan batuan yang berbeda",
-                "10": "B. Proses pembentukan batuan sedimen dari fragmen yang diangkut"
-            }
+                "1": "B",
+                "2": "C",
+                "3": "C",
+                "4": "B",
+                "5": "C",
+                "6": "C",
+                "7": "C",
+                "8": "C",
+                "9": "C",
+                "10": "B"
+            },
+            "userScore": 0
         },
         {
-            "title": "SECTION_TITLE",
+            "title": "Siklus Hidrologi",
             "content": [
                 {
                     "type": "reading",
-                    "content": "TEXT_CONTENT",
+                    "content": "Siklus hidrologi adalah proses alami di mana air bergerak melalui berbagai fase di bumi, mulai dari penguapan, kondensasi, presipitasi, infiltrasi, limpasan, hingga kembali ke laut. Proses ini sangat penting karena mengatur distribusi air di seluruh planet kita. Siklus hidrologi dimulai dengan penguapan, di mana air dari permukaan bumi, seperti sungai, danau, dan laut, menguap ke atmosfer akibat panas matahari. Uap air yang terbentuk kemudian bergerak ke atas dan mendingin hingga terjadi kondensasi, di mana uap air berubah menjadi awan.Ketika awan terkondensasi dengan cukup banyak, mereka dapat menghasilkan presipitasi dalam bentuk hujan, salju, atau embun. Presipitasi ini kemudian jatuh kembali ke bumi dalam bentuk air, menutupi permukaan tanah atau mengalir ke sungai dan danau. Air yang jatuh ke tanah dapat menyusup (infiltrasi) ke dalam tanah dan menjadi bagian dari air tanah. Selain itu, air juga dapat mengalir di permukaan tanah sebagai limpasan, mengikuti kemiringan tanah dan membentuk aliran sungai, hingga akhirnya kembali ke laut dan proses siklus hidrologi dimulai lagi.Penguapan adalah bagian awal dari siklus hidrologi. Proses ini terjadi ketika air dari permukaan bumi, seperti sungai, danau, dan laut, menguap ke atmosfer akibat panas matahari. Selama penguapan, air berubah menjadi uap air yang naik ke atmosfer.Setelah uap air terbentuk di atmosfer, proses kondensasi terjadi. Ini adalah ketika uap air mengalami pendinginan dan berubah kembali menjadi bentuk cairan, membentuk awan di langit.Ketika awan terkondensasi dengan cukup banyak, mereka akan menumbulkan presipitasi. Presipitasi ini dapat berupa hujan, salju, embun, atau bentuk lainnya dan jatuh kembali ke permukaan bumi.Air yang jatuh ke permukaan bumi dapat mengalir ke sungai, danau, atau laut sebagai limpasan permukaan, atau menyusup ke dalam tanah sebagai air tanah.Air yang diserap oleh tanah dapat membentuk mata air, mengalir ke sungai, atau diambil oleh akar tanaman dalam proses transpirasi.Limpasan permukaan dan air tanah kemudian mengalir kembali ke sungai dan akhirnya ke laut, menutup siklus hidrologi.",
                     "isComplete": false
                 },
                 {
                     "type": "video",
-                    "content": "YOUTUBE_LINK",
+                    "content": "https://www.youtube.com/watch?v=jFjI6y46QRk",
                     "isComplete": false
                 },
                 {
                     "type": "video",
-                    "content": "YOUTUBE_LINK",
+                    "content": "https://www.youtube.com/watch?v=U5ikrkOGio0",
                     "isComplete": false
                 }
             ],
@@ -632,17 +634,18 @@
                 }
             ],
             "quizAnswer": {
-                "1": "C. Pergerakan air di berbagai fase di bumi, mulai dari penguapan hingga presipitasi",
-                "2": "C. Penguapan",
-                "3": "C. Uap air berubah menjadi air cair dan membentuk awan",
-                "4": "D. Hujan atau salju terjadi",
-                "5": "D. Semua jawaban benar",
-                "6": "B. Air yang mengalir di permukaan tanah ke sungai dan danau",
-                "7": "C. Membentuk mata air atau diserap oleh akar tanaman",
-                "8": "C. Membentuk mata air atau diserap oleh akar tanaman",
-                "9": "C. Dengan air yang mengalir ke sungai dan akhirnya ke laut",
-                "10": "C. Karena mengatur distribusi air di seluruh planet kita"
-            }
+                "1": "C",
+                "2": "C",
+                "3": "C",
+                "4": "D",
+                "5": "D",
+                "6": "B",
+                "7": "C",
+                "8": "C",
+                "9": "C",
+                "10": "C"
+            },
+            "userScore": 0
         }
     ]
 }

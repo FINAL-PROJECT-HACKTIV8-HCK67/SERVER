@@ -1,5 +1,5 @@
 {
-    "name": "Kimia 1",
+    "name": "Kimia I",
     "cost": 1000,
     "sections": [
         {
@@ -204,34 +204,35 @@
                 }
             ],
             "quizAnswer": {
-                "1": "D. Atom",
-                "2": "C. Jumlah proton dalam inti atom",
-                "3": "B. Ikatan kovalen",
-                "4": "D. Ikatan ionik",
-                "5": "D. Semua jawaban benar",
-                "6": "B. Zat bereaksi dengan oksigen",
-                "7": "B. Menunjukkan reagen dan produk dalam reaksi kimia",
-                "8": "A. 6 proton, 6 neutron, 6 elektron",
-                "9": "A. Ion positif atau ion negatif",
-                "10": "C. 17 proton, 18 neutron, 18 elektron"
-            }
+                "1": "D",
+                "2": "C",
+                "3": "B",
+                "4": "D",
+                "5": "D",
+                "6": "B",
+                "7": "B",
+                "8": "A",
+                "9": "A",
+                "10": "C"
+            },
+            "userScore": 0
         },
         {
-            "title": "SECTION_TITLE",
+            "title": "Ikatan Kimia",
             "content": [
                 {
                     "type": "reading",
-                    "content": "TEXT_CONTENT",
+                    "content": "Ikatan kimia adalah fenomena di mana atom-atom saling berinteraksi untuk membentuk molekul atau senyawa. Terdapat beberapa jenis ikatan kimia yang umum, di antaranya ikatan ionik, ikatan kovalen, dan ikatan logam.Ikatan ionik terjadi ketika satu atom melepaskan satu atau lebih elektron untuk membentuk ion positif, sedangkan atom lain menangkap elektron tersebut untuk membentuk ion negatif. Ion-ion ini tertarik satu sama lain karena gaya tarik elektrostatik antara muatan positif dan negatif mereka. Contoh ikatan ionik adalah ikatan antara natrium (Na) dan klorin (Cl) dalam senyawa natrium klorida (NaCl).Sementara itu, ikatan kovalen terjadi ketika dua atom berbagi satu atau lebih pasangan elektron. Atom-atom ini berbagi elektron dalam upaya untuk mencapai konfigurasi elektron yang lebih stabil. Ikatan kovalen bisa berupa ikatan tunggal, ikatan ganda, atau ikatan rangkap tiga, tergantung pada jumlah pasangan elektron yang dibagi. Misalnya, dalam molekul air (H2O), dua atom hidrogen berbagi elektron dengan atom oksigen untuk membentuk ikatan kovalen.Selain ikatan ionik dan kovalen, ada juga ikatan logam, di mana elektron terbebas bergerak di antara atom logam yang terikat. Atom logam saling berbagi elektron dalam 'laut elektron', sehingga membentuk struktur yang kuat dan fleksibel. Ini menjelaskan sifat-sifat logam seperti konduktivitas listrik yang tinggi dan kemampuan untuk ditempa. Contoh ikatan logam adalah dalam logam seperti tembaga, besi, dan aluminium.",
                     "isComplete": false
                 },
                 {
                     "type": "video",
-                    "content": "YOUTUBE_LINK",
+                    "content": "https://www.youtube.com/watch?v=kS5iU4v0QZk",
                     "isComplete": false
                 },
                 {
                     "type": "video",
-                    "content": "YOUTUBE_LINK",
+                    "content": "https://www.youtube.com/watch?v=FaeAurHnQJs",
                     "isComplete": false
                 }
             ],
@@ -373,7 +374,7 @@
                             "B": "Ikatan kovalen"
                         },
                         {
-                            "C": "\"Laut elektron\""
+                            "C": "Laut elektron"
                         },
                         {
                             "D": "Ikatan hidrogen"
@@ -418,34 +419,35 @@
                 }
             ],
             "quizAnswer": {
-                "1": "B. Daya tarik antara atom dalam suatu molekul atau senyawa",
-                "2": "B. Atom melepaskan elektron dan membentuk ion",
-                "3": "B. Natrium (Na) dan klorin (Cl) dalam natrium klorida (NaCl)",
-                "4": "B. Atom-atom berbagi elektron",
-                "5": "A. Tunggal",
-                "6": "B. Hidrogen (H2)",
-                "7": "B. Atom-atom logam",
-                "8": "C. \"Laut elektron\"",
-                "9": "C. Tembaga",
-                "10": "A. Dua pasangan elektron yang dibagi antara dua atom"
-            }
+                "1": "B",
+                "2": "B",
+                "3": "B",
+                "4": "B",
+                "5": "A",
+                "6": "B",
+                "7": "B",
+                "8": "C",
+                "9": "C",
+                "10": "A"
+            },
+            "userScore": 0
         },
         {
-            "title": "SECTION_TITLE",
+            "title": "Larutan Elektrolit/non-Elektrolit",
             "content": [
                 {
                     "type": "reading",
-                    "content": "TEXT_CONTENT",
+                    "content": "Larutan elektrolit dan non-elektrolit merupakan dua jenis larutan yang memperlihatkan perbedaan dalam kemampuan mereka untuk menghantarkan arus listrik. Sebuah larutan elektrolit terbentuk ketika senyawa dalam larutan tersebut terurai menjadi ion-ion yang bermuatan saat larutan tersebut larut dalam pelarut. Ini berarti larutan elektrolit mengandung ion-ion yang dapat bergerak bebas dalam larutan dan menghantarkan arus listrik. Contoh larutan elektrolit meliputi larutan garam (seperti NaCl) dan larutan asam (seperti HCl).Di sisi lain, larutan non-elektrolit terbentuk ketika senyawa dalam larutan tersebut tidak terurai menjadi ion-ion yang bermuatan. Molekul dalam larutan non-elektrolit tetap utuh dan tidak berubah menjadi ion saat larut dalam pelarut. Akibatnya, larutan non-elektrolit tidak mampu menghantarkan arus listrik. Contoh larutan non-elektrolit adalah larutan gula (sukrosa) dan etanol.Ketika larutan elektrolit ditempatkan di antara elektroda dan dihubungkan ke sumber listrik, ion-ionnya akan bergerak menuju elektroda yang berlawanan muatan. Kation (ion positif) akan bergerak menuju elektroda negatif (katoda), sementara anion (ion negatif) akan bergerak menuju elektroda positif (anoda). Hal ini menunjukkan bahwa larutan elektrolit dapat menghantarkan arus listrik karena kemampuan ion-ion untuk bergerak.",
                     "isComplete": false
                 },
                 {
                     "type": "video",
-                    "content": "YOUTUBE_LINK",
+                    "content": "https://www.youtube.com/watch?v=1tvvSUySfls",
                     "isComplete": false
                 },
                 {
                     "type": "video",
-                    "content": "YOUTUBE_LINK",
+                    "content": "https://www.youtube.com/watch?v=patZ8zoemVo",
                     "isComplete": false
                 }
             ],
@@ -632,17 +634,18 @@
                 }
             ],
             "quizAnswer": {
-                "1": "B. Larutan yang terbentuk dari senyawa yang terurai menjadi ion-ion yang bermuatan",
-                "2": "C. Larutan natrium klorida (NaCl)",
-                "3": "B. Terurai menjadi ion-ion yang bermuatan",
-                "4": "A. Molekulnya tidak terurai",
-                "5": "B. Larutan gula (sukrosa)",
-                "6": "A. Elektroda negatif (katoda)",
-                "7": "D. Semua jawaban benar",
-                "8": "C. Tetap utuh dalam bentuk molekul",
-                "9": "B. Larutan non-elektrolit",
-                "10": "B. Berlawanan muatannya"
-            }
+                "1": "B",
+                "2": "C",
+                "3": "B",
+                "4": "A",
+                "5": "B",
+                "6": "A",
+                "7": "D",
+                "8": "C",
+                "9": "B",
+                "10": "B"
+            },
+            "userScore": 0
         }
     ]
 }
