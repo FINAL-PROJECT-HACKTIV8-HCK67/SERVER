@@ -27,6 +27,15 @@ class Controller {
         }
     }
 
+    static async paymentNotificationHandler(req, res, next){
+        try {
+            console.log(req.body);
+            res.status(200).json({message : "TEST"})
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
 }
 
 module.exports = Controller

@@ -9,4 +9,6 @@ console.log("ENTER");
 
 router.post('/shop/add-coin', authentication, Controller.addCoin)
 
+router.post('/payment-notification-handler', Controller.paymentNotificationHandler)
+
 module.exports = router

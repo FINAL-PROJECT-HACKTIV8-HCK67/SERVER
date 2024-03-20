@@ -1,5 +1,5 @@
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://zoombooz:zoombooz@cluster0.jt8ujtk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const uri = process.env.MONGO_URI;
 
 const client = new MongoClient(uri, {
   serverApi: {
@@ -9,6 +9,10 @@ const client = new MongoClient(uri, {
   }
 });
 
-const database = client.db('EduQuest')
+let database = client.db('EduQuest')
+
+if(process.env.NODE_ENV === "test"){
+  database = client.db("PintarLabsTest")
+}
 
 module.exports = database
