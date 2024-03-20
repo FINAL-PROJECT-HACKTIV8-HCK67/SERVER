@@ -1,5 +1,6 @@
 const { ObjectId } = require("mongodb");
 const database = require("../config/db");
+const achievementManager = require("../helpers/achievementManager");
 
 class Controller {
 
@@ -217,6 +218,11 @@ class Controller {
                 }
     
                 await database.collection("UserCourses").updateOne(filter, update)
+
+                if(userScore == 100){
+                    let achievement = await achievementManager(user.id, "perfectionist")
+                    console.log(achievement, "<<<");
+                }
             }
 
             res.status(200).json({message : `Your Score is ${userScore}`})

@@ -3,6 +3,8 @@ const request = require('supertest');
 const database = require('../config/db');
 const { hashPassword } = require('../helpers/bcrypt');
 
+let accessToken = null
+
 beforeAll(async () => {
     await database.collection("Users").insertOne({
         name : "Goerge Martin",
@@ -157,5 +159,13 @@ describe("POST /login", () => {
             })
             expect(status).toBe(400)
             expect(body).toEqual({message : "Invalid Email/Password"})
+    })
+})
+
+describe("GET /profile", () => {
+    test("Should return 200 and an object", async () => {
+        const {status, body} = await request(app)
+            .get("/profile")
+            .set("Authorization", )
     })
 })

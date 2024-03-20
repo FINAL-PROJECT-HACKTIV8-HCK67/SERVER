@@ -77,7 +77,6 @@ async function achievementManager(userId, trigger){
             achievementUnlocked.push("Professor unlocked")
         }
     }
-
     return {achievementUnlocked}
 }
 
