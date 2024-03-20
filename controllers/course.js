@@ -105,6 +105,13 @@ class Controller {
                 {$set : {"stats.coin" : userStat.stats.coin - course.cost}}
             )
 
+            await database.collection("UserStats").updateOne(
+                {userId : new ObjectId(user.id)},
+                {$inc : {"stats.courseUnlocked" : 1}}
+            )
+
+            await achievementManager(user.id)
+
             res.status(201).json({message : `Course unlocked, ${userStat.stats.coin - course.cost} coins remained`})
 
         } catch (error) {
@@ -130,7 +137,12 @@ class Controller {
                 updateQuery
             )
 
-            res.status(200).json({message : "Course Completed"})
+            await database.collection("UserStats").updateOne(
+                {userId : new ObjectId(user.id)},
+                {$inc : {"stats.coin" : 50, "stats.exp" : 50}}
+            )
+
+            res.status(200).json({message : "Course Completed; Coin gained 50; Exp gained 50"})
 
         } catch (error) {
             console.log(error);
@@ -203,8 +215,9 @@ class Controller {
             ]).toArray()
 
             const currentScore = queryUserScore[0].sections.userScore
-
-            console.log(userScore, ">", currentScore);
+            const coinsGained = (userScore - currentScore) * 10
+            const expGained = (userScore - currentScore) * 10
+            let achievement = ""
 
             if(userScore > currentScore){
                 const filter = {
@@ -220,12 +233,23 @@ class Controller {
                 await database.collection("UserCourses").updateOne(filter, update)
 
                 if(userScore == 100){
-                    let achievement = await achievementManager(user.id, "perfectionist")
+                    achievement = await achievementManager(user.id, "perfectionist")
                     console.log(achievement, "<<<");
                 }
             }
 
-            res.status(200).json({message : `Your Score is ${userScore}`})
+            await database.collection("UserStats").updateOne(
+                {userId : new ObjectId(user.id)},
+                {$inc : {"stats.quizAnswered" : 10, "stats.coin" : coinsGained, "stats.exp" : expGained}}
+            )
+
+            let achievementNotif = ""
+
+            if(achievement){
+                achievementNotif = "Achievement Unlocked"
+            }
+
+            res.status(200).json({message : `Your Score is ${userScore}; Coined obtained ${coinsGained}; Exp gained ${expGained}; ${achievementNotif}`})
 
         } catch (error) {
             console.log(error);
