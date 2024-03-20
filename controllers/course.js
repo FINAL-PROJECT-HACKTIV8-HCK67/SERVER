@@ -39,26 +39,15 @@ class Controller {
 
             const response = await database.collection("UserCourses").aggregate([
                 {
-                    $match:
-                        {
-                        userId: user.id,
-                        },
+                    $match : { userId: user.id },
                 },
                 {
-                    $match:
-                        {
-                        name: detail,
-                        },
+                    $match : { name: detail },
                 },
                 {
-                    $unwind:
-                        {
-                        path: "$sections",
-                        },
+                    $unwind : { path: "$sections" },
                 },
             ]).toArray()
-
-            console.log(response, ">>>>>>>>");
 
             res.status(200).json({response})
 
@@ -68,7 +57,7 @@ class Controller {
         }
     }
 
-    static async postCourse(req, res, next){
+    static async postCourse(req, res, next){ // Nanti dihapus
         try {
 
             const {name, sections, cost} = req.body
@@ -103,7 +92,7 @@ class Controller {
 
             const hasBought = await database.collection("UserCourses").findOne({userId : user.id, name : course.name})
 
-            if(hasBought) throw {name : "Course has been bought before", message : "Course has been bought before", status : 400}
+            if(hasBought) throw {name : "You have already unlocked this course", message : "You have already unlocked this course", status : 400}
 
             const response = await database.collection("UserCourses").insertOne({
                 userId : user.id,
@@ -127,19 +116,13 @@ class Controller {
         try {
             const user = req.user
 
-            const {courseTitle, title, index} = req.body
-
-            // const response = await database.collection("UserCourses").updateOne(
-            //     {_id : new ObjectId(courseId), userId : user.id , "sections.title" : title, "sections.content.type" : type},
-            //     {$set : {"sections.$.content.$[elem].isComplete" : true}},
-            //     {"arrayFilters" : [{"elem.type" : type}]}
-            // )
+            const {courseTitle, section, index} = req.body
 
             const updateQuery = {
                 $set: {}
             }
 
-            updateQuery.$set[`sections.0.content.${index}.isComplete`] = true
+            updateQuery.$set[`sections.${section}.content.${index}.isComplete`] = true
 
             const response = await database.collection("UserCourses").updateOne(
                 {name : courseTitle, userId : user.id},
@@ -158,17 +141,27 @@ class Controller {
         try {
             const user = req.user
 
-            const {courseId, title} = req.body
+            const {courseTitle, title} = req.body
 
-            const {sections} = await database.collection("UserCourses").findOne(
-                {_id : new ObjectId(courseId), "sections.title" : title}
-            )
+            const response = await database.collection("UserCourses").aggregate([
+                {
+                    $match : {userId: user.id},
+                },
+                {
+                    $match : {name: courseTitle},
+                },
+                {
+                    $unwind : {path: "$sections"},
+                },
+                {
+                    $match : {"sections.title": title},
+                },
+                {
+                    $project : {"sections.quiz": 1, _id: 0},
+                },
+            ]).toArray()
 
-            const searchSection = sections.filter((perSection) => perSection.title === title)[0]
-
-            const quiz = searchSection.quiz
-
-            res.status(200).json({quiz})
+            res.status(200).json({response : response[0]})
 
         } catch (error) {
             console.log(error);
@@ -180,19 +173,53 @@ class Controller {
         try {
             const user = req.user
 
-            const {answers, courseId, title} = req.body
+            const {answers, courseTitle, title} = req.body
 
-            const  {sections} = await database.collection("UserCourses").findOne(
-                {_id : new ObjectId(courseId)}
-            ) 
+            const queryQuestionsAnswer = await database.collection("UserCourses").aggregate([
+                { $match : { userId: user.id } },
+                { $match : { name: courseTitle } },
+                { $unwind : { path: "$sections" } },
+                { $match : { "sections.title": title } },
+                { $project : { "sections.quizAnswer": 1, _id: 0 } },
+            ]).toArray()
 
-            const searchSection = sections.filter((perSection) => perSection.title === title)[0]
+            const quizAnswers = queryQuestionsAnswer[0].sections.quizAnswer
 
-            const quizAnswer = searchSection.quizAnswer
+            let userScore = 0;
 
-            const correctAnswer = 0
-            
-            
+            for(let i = 1; i <= 10; i++){
+                if(answers[i] === quizAnswers[i]){
+                    userScore += 10
+                }
+            }
+
+            const queryUserScore = await database.collection("UserCourses").aggregate([
+                { $match: { userId: user.id } },
+                { $match : { name: courseTitle } },
+                { $unwind : { path: "$sections" } },
+                { $match : { "sections.title": title } },
+                { $project : { "sections.userScore": 1, _id: 0 } },
+            ]).toArray()
+
+            const currentScore = queryUserScore[0].sections.userScore
+
+            console.log(userScore, ">", currentScore);
+
+            if(userScore > currentScore){
+                const filter = {
+                    userId : user.id,
+                    name : courseTitle,
+                    "sections.title" : title
+                }
+    
+                const update = {
+                    $set : {"sections.$.userScore" : userScore}
+                }
+    
+                await database.collection("UserCourses").updateOne(filter, update)
+            }
+
+            res.status(200).json({message : `Your Score is ${userScore}`})
 
         } catch (error) {
             console.log(error);

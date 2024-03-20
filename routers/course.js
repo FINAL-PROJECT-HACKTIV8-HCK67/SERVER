@@ -15,7 +15,7 @@ router.post('/course/unlock-course', authentication, Controller.unlockCourse)
 
 router.post('/course/complete-course', authentication, Controller.completeCourse)
 
-router.get('/course/get-quiz', authentication, Controller.getQuiz)
+router.post('/course/get-quiz', authentication, Controller.getQuiz)
 
 router.post('/course/submit-quiz', authentication, Controller.submitQuiz)
 
