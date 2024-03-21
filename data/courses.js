@@ -1,7 +1,7 @@
 const app = require("../app");
 const request = require("supertest");
 const database = require("../config/db");
-const courseTest = require("../data/biology1.json");
+const courseTest = require("./biology1.json");
 import { signToken } from "../helpers/jwt";
 
 const userTest = {
@@ -20,11 +20,12 @@ beforeAll(async () => {
   let user = await database
     .collection("Users")
     .findOne({ where: "g.martin@email.com" });
-  accessToken = signToken({
-    _id: user._id,
-    name: user.name,
-    email: user.email,
-  });
+    console.log(user);
+  // accessToken = signToken({
+  //   _id: user._id,
+  //   name: user.name,
+  //   email: user.email,
+  // });
 });
 
 afterAll(async () => {

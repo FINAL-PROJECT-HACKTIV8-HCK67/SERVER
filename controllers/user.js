@@ -2,7 +2,7 @@ const { ObjectId } = require("mongodb");
 const database = require("../config/db");
 const { comparePassword, hashPassword } = require("../helpers/bcrypt");
 const { signToken } = require("../helpers/jwt");
-const achievementManager = require("../helpers/achievementManager");
+// const achievementManager = require("../helpers/achievementManager");
 
 class Controller {
 
@@ -26,9 +26,9 @@ class Controller {
                 email : user.email
             })
 
-            const achievement = await achievementManager(user._id)
+            // const achievement = await achievementManager(user._id)
 
-            res.status(200).json({accessToken, achievement})
+            res.status(200).json({accessToken})
 
         } catch (error) {
             console.log(error);
